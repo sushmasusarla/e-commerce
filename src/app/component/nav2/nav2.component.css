@@ -1,0 +1,8 @@
+.nav2 {
+    border: 1px solid grey;
+}
+@media (max-width:576px){
+    .dropdown-item::before{
+        transform: rotate(-90deg);
+    }
+}
