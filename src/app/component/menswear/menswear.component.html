@@ -1,0 +1,36 @@
+
+
+<div class="grid">
+
+    <div class="card" *ngFor="let ts of tshirt">
+        <img [src]="ts.image" class="card-img-top" [alt]="ts.description">
+        <div class="card-body">
+          <h5 class="card-title">{{ts.brandname}}</h5>
+          <p class="card-text">{{ts.description}}</p>
+          <a  class="btn btn-primary" (click)="deleteEvent(ts.id)">Delete</a>
+          <!--<a  class="btn btn-primary" (click)="updateEvent(ts.id)">Update</a> -->
+
+        </div>
+      </div>
+</div>
+
+
+  <!----<div class="grid">
+  <div class="card" *ngFor="let tshirt of details" >
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img [src]="tshirt.image" class="img-fluid rounded-start" [alt]="tshirt.description">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{tshirt.brandname}}</h5>
+            <p class="card-text">{{tshirt.description}}</p>
+            Price:{{tshirt.cost}}<br>
+            Brandname:{{tshirt.brandname}}
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+<hr>
+----->
